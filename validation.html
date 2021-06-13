@@ -1,0 +1,19 @@
+<html>
+<head>
+<title> Validating HTML forms<\title>
+<script type="text/javascript">
+function validatereqquiredfields(thisform)
+{
+	var username = thisform.uname.value;
+	var password = thisform.pw.value;
+	if (username==null|| username=="")
+	{
+		alert("Enter user name");
+		thisform.uname.focus();
+	}
+}
+</head>
+<Body>
+<FORM action="validation.html" onsubmit="return validatereqquiredfields(this)" method="post">
+User Name : <input type = "text" Name="uname"></br>
+
